@@ -11,7 +11,3 @@ password = "".join(random.choices(chars + digits + symbols, k=length))
 #k=length argument specifies how many characters to choose
 
 print("Your generated password is: ", password)
-
-from flask import Flask, render_template
-def index():
-    return render_template('fpg.html')
